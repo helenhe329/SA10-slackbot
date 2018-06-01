@@ -9,3 +9,4 @@ Slack Bot that provides restaurant recommendations. The app can be found at http
 * Wake up on an outgoing webhook from #bots in the CS52 Slack
 
 ![screenshot](img/screenshot1.PNG)
+![screenshot](img/screenshot2.PNG)
