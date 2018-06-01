@@ -127,6 +127,16 @@ controller.hears(['I want (.*) food', 'I want (.*)', 'I\'m feeling (.*)'], ['dir
   });
 });
 
+// thanks response
+controller.hears(['thanks', 'thank you'], ['direct_message', 'direct_mention', 'mention'], (bot, message) => {
+  bot.reply(message, 'No problem! I\'m happy to help');
+});
+
+// bye response
+controller.hears(['bye', 'goodbye', 'see you', 'adios'], ['direct_message', 'direct_mention', 'mention'], (bot, message) => {
+  bot.reply(message, 'Bye! Talk to you next time!');
+});
+
 // default response
 controller.hears(['.*', 'what'], ['direct_message', 'direct_mention', 'mention'], (bot, message) => {
   bot.reply(message, 'Sorry, I don\'t quite understand you. I\'m here to give you restaurant recommendations in the Hanover, NH area! Just let me know what type of food you\'re interested in right now.');
